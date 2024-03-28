@@ -48,7 +48,6 @@ import NetworkTypeScreen from './Settings/NetworkTypeScreen';
 import UpgradeNoticeScreen from './Settings/UpgradeNoticeScreen';
 import TestScreen from './Test/TestScreen';
 import HistoryScreen from './Wallet/HistoryScreen';
-import KeystoneSignScreen from './Wallet/KeystoneSignScreen';
 import MoonPayScreen from './Wallet/MoonPayScreen';
 import ReceiveScreen from './Wallet/ReceiveScreen';
 import TxConfirmScreen from './Wallet/TxConfirmScreen';
@@ -247,11 +246,6 @@ const routes = {
     path: '/wallet/unavailable-utxo',
     element: <UnavailableUtxoScreen />
   },
-
-  KeystoneSignScreen: {
-    path: '/keystone/sign',
-    element: <KeystoneSignScreen />
-  }
 };
 
 type RouteTypes = keyof typeof routes;
