@@ -108,6 +108,7 @@ export interface WalletController {
   ): Promise<{ address: string; type: string }[]>;
 
   createTmpKeyringWithPrivateKey(privateKey: string, addressType: AddressType): Promise<WalletKeyring>;
+  createTmpKeyringWithKeystone(urType: string, urCbor: string, addressType: AddressType, accountCount?: number): Promise<WalletKeyring>;
 
   createTmpKeyringWithMnemonics(
     mnemonic: string,
