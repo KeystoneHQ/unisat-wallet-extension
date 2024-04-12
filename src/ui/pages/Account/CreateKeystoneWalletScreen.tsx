@@ -290,7 +290,6 @@ function Step3({
       if (filtItems.length === 0) {
         filtItems.push(items[0]);
       }
-      console.log('filteItems', filtItems);
       return filtItems;
     } else {
       const items = group.address_arr.map((v, index) => ({
@@ -302,7 +301,6 @@ function Step3({
       if (filtItems.length === 0) {
         filtItems.push(items[0]);
       }
-      console.log('filteItems', filtItems);
       return filtItems;
     }
   };
